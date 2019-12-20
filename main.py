@@ -2,7 +2,7 @@
 
 import datetime
 
-file2 = open("Logs.txt","a+")
+file2 = open("CS573---HW7---Docker/Logs.txt","a+")
 lines = file2.readlines()
 
 now = datetime.datetime.now()
