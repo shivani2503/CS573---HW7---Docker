@@ -1,7 +1,7 @@
 To build image--
 
 1. Copy the "Dockerfile".
-2. Run "docker build <path-of-location-where-above-dockerfile-is-saved>" i.e for example if you are running this command
+2. Run "docker build [path-of-location-where-above-dockerfile-is-saved]" i.e for example if you are running this command
    from the same directory where the above dockerfile is saved then command will be "docker build .".
 
 3. Run "docker images" and copy the most recent IMAGE ID created
