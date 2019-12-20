@@ -1,7 +1,17 @@
-FROM python:3
+# getting base image ubuntu
+FROM ubuntu
 
-ADD main.py /
+RUN apt-get update
+RUN apt-get install -y python3
+RUN apt-get install -y git
 
-RUN pip install pystrich
+RUN git clone https://github.com/shivani2503/CS573---HW7---Docker.git
+RUN cd CS573---HW7---Docker
+RUN chmod +x start.sh
 
-CMD [ "python", "./main.py" ]
+CMD ["./start.sh"]
+
+
+
+
+
